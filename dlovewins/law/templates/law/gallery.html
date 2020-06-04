@@ -1,0 +1,47 @@
+{% extends "law/base.html" %}
+{% load static %}
+{% block content %}
+    <header class="gallery-header">
+      <h1>My Gallery</h1>
+    </header>
+
+    <!-- Gallery starts here -->
+    <div id="wrapper">
+        <!---Gallery Row 1 Start -->
+        <section class="one-third">
+          <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l1.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l1.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l7.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l7.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l8.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l8.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <!---Gallery Row 1 End -->
+
+        <!---Gallery Row 2 Start -->
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l2.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l2.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l5.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l5.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l3.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l3.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <!---Gallery Row 2 End -->
+
+        <!---Gallery Row 3 Start -->
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l7.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l7.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l6.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l6.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <section class="one-third">
+             <a class="example-image-link" id="lightbox-img" href= "{% static 'law/assets/img/gallery/l9.jpg' %}" data-lightbox="example-set" data-title="LoveAlwaysWins-Lijana"><img class="example-image" src="{% static 'law/assets/img/gallery/l9.jpg' %}" alt="" title="Love always wins"></a>
+        </section>
+        <!---Gallery Row 3 End -->
+
+    </div>
+{% endblock content %}

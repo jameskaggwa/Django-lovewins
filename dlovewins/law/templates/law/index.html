@@ -1,0 +1,35 @@
+
+{% extends "law/base.html" %}
+{% block content %}
+<!--
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.author }} on {{ post.date_posted }}</p>
+        <p>{{ post.content }}</p>
+    {% endfor %}
+-->
+    <!-- dont touch this Dad i will fix it later -->
+        <header class="masthead bg-transparent">
+            <div class="overlay bg-transparent"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <div class="site-heading">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- dont touch this Dad i will fix it later -->
+
+
+    <!-- bottom buttons start -->
+    <div class="container-button">
+      <a class="navbar-brand" href="donate.php"><button class="btn btn1">Donate Now</button></a>
+      <a class="navbar-brand" href="joinus.php"><button class="btn btn2">Join Us Now</button></a>
+      <a class="navbar-brand" href="getinvolved.php"><button class="btn btn1">Get Involved</button></a>
+    </div>
+    <!-- bottom button Ends -->
+
+    {% endblock content %}
