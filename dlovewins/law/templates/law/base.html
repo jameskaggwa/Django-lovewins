@@ -55,7 +55,7 @@
             <a class="nav-link" href="{% url 'law-projects' %}">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../chat">Chat</a>
+            <a class="nav-link" href="{% url 'law-chat' %}">Chat</a>
           </li>
         </ul>
       </div>
@@ -66,8 +66,26 @@
     {% block content %}
     {% endblock %}
 
-    <!-- Django include tag -->
+    <!-- Django include tag
     {% include "./footer.html" %}
+    -->
+    <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><a class="" href="#"> <i class="fa fa-twitter bttn fa-stack-1x fa-inverse"></i></a></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><a class="bttn" href="#"> <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><a class="bttn" href="#"> <i class="fa fa-instagram fa-stack-1x fa-inverse"></i></a></span></li>
+                        </ul>
+                        <p class="text-muted copyright">Copyright&nbsp;©&nbsp;LoveAlwaysWins.de&nbsp;&nbsp;
+                         <a href="impressum.php">Impressum</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
 
     <!-- js links -->
     <script src="assets/js/jquery.min.js"></script>
