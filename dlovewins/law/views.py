@@ -1,8 +1,12 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 def home(request):
-    return render(request, 'law/index.html', {'title': 'law'})
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'law/index.html', context)
 def about(request):
     return render(request, 'law/about.html', {'title': 'About'})
 def community(request):

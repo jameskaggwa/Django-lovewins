@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
 
-    <<link rel="stylesheet" href="{% static 'law/assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'law/assets/fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'law/assets/css/main2.css' %}">
 
     {% if title %}
         <title>LoveAlwaysWins - {{ title }}</title>
@@ -21,10 +22,6 @@
 </head>
 
 <body>
-
-    <!-- Django include tag
-    {% include "./menu.html" %}
-     -->
 
     <!-- Dad this is the modified menu -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar" style="background-color: #8B59A7;">
@@ -62,13 +59,16 @@
       </div>
     </nav>
 <!-- Menu Ends here -->
-
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
     {% block content %}
     {% endblock %}
 
-    <!-- Django include tag
-    {% include "./footer.html" %}
-    -->
     <!-- footer -->
         <footer>
             <div class="container">
