@@ -19,3 +19,7 @@ def projects(request):
     return render(request, 'law/projects.html', {'title': 'Projects'})
 def chat(request):
     return render(request, 'law/chat.html', {'title': 'Chat'})
+def register(request):
+    return render(request, 'law/login_register_modal.html', {'title': 'Register'})
+def login(request):
+    return render(request, 'law/login_register_modal.html', {'title': 'Login'})
