@@ -15,3 +15,5 @@ def projects(request):
     return render(request, 'law/projects.html', {'title': 'Projects'})
 def chat(request):
     return render(request, 'law/chat.html', {'title': 'Chat'})
+def more(request):
+        return render(request, 'law/test.html', {'title': 'more'})
