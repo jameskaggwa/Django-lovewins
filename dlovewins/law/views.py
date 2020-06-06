@@ -1,8 +1,12 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 def home(request):
-    return render(request, 'law/index.html', {'title': 'law'})
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'law/index.html', context)
 def about(request):
     return render(request, 'law/about.html', {'title': 'About'})
 def community(request):
@@ -15,5 +19,3 @@ def projects(request):
     return render(request, 'law/projects.html', {'title': 'Projects'})
 def chat(request):
     return render(request, 'law/chat.html', {'title': 'Chat'})
-def more(request):
-        return render(request, 'law/test.html', {'title': 'more'})

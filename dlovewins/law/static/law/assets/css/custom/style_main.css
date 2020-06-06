@@ -6,12 +6,14 @@
 	padding: 0;
 }
 
-body{
-	background-image: url('assets/img/heart-bg.jpg');
+.main_body{
+	background-image: url("/static/law/assets/img/heart-bg.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
 
 }
+
+
 /* style for logo for blending */
 .logo{
 }
@@ -138,8 +140,12 @@ a{
 /* media quaries */
 @media screen and (max-width: 768px) {
 	body{
-		background-image: url('assets/img/heart-bg-sm.jpg');
+		background-image: url('/static/law/assets/img/heart1-bg-sm.jpg');
 		background-size:cover;
 		background-repeat: no-repeat;
 	}
+}
+/* sign up button css */
+.btn-signup{
+	list-style: none;
 }
