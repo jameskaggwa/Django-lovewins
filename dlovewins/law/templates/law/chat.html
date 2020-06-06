@@ -1,17 +1,31 @@
 
-{% extends "law/base.html" %}
 {% load static %}
-{% block content %}
-    <header class="masthead" style="background-image:url({% static 'law/assets/img/chat.jpg' %});">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                  <div class="post-heading">
-                    <h1>Let us chat</h1>
-                    <h2 class="subheading">Coming Soon</h2>
-                  </div>
-                </div>
-          </div>
-    </header>
-{% endblock content %}
+{% include "../law/header.html" %}
+
+<body>
+
+{% include '../law/menu.html' %}
+
+<header class="masthead" style="background-image:url({% static 'law/assets/img/chat.jpg' %});">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <div class="post-heading">
+                <h1>Let us chat</h1>
+                <h2 class="subheading">Coming Soon</h2>
+              </div>
+            </div>
+      </div>
+</header>
+
+    {% include '../law/footer.html' %}
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+</body>
+
+</html>

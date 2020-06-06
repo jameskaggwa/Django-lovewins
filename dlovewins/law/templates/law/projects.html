@@ -1,16 +1,32 @@
-{% extends "law/base.html" %}
+
 {% load static %}
-{% block content %}
-    <header class="masthead" style="background-image:url({% static 'law/assets/img/projects.jpg' %});">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading">
-                        <h1>Lets Build Together</h1><span class="subheading">Coming Soon</span>
-                    </div>
+{% include "../law/header.html" %}
+
+<body>
+
+{% include '../law/menu.html' %}
+
+<header class="masthead" style="background-image:url({% static 'law/assets/img/projects.jpg' %});">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <div class="site-heading">
+                    <h1>Lets Build Together</h1><span class="subheading">Coming Soon</span>
                 </div>
             </div>
         </div>
-    </header>
-{% endblock content %}
+    </div>
+</header>
+
+
+    {% include '../law/footer.html' %}
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+</body>
+
+</html>

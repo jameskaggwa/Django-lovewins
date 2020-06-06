@@ -1,28 +1,30 @@
 
-{% extends "law/base.html" %}
-{% block content %}
+{% load static %}
+{% include "../law/header.html" %}
 
+<body>
 
+    {% include '../law/menu.html' %}
 
     <!-- dont touch this Dad i will fix it later -->
-        <header class="masthead bg-transparent">
-            <div class="overlay bg-transparent"></div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
+    <!-- dont touch this Dad i will fix it later -->
+    <header class="masthead bg-transparent">
+        <div class=""></div>
 
-                            {% for post in posts %}
-                                <h1>{{ post.title }}</h1>
-                                <p>By {{ post.author }} on {{ post.date_posted|date:"F d, Y" }}</p>
-                                <p>{{ post.content }}</p>
-                            {% endfor %}
+    <header class="masthead bg-transparent">
+        <div class="overlay bg-transparent"></div>
 
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="site-heading">
+
                 </div>
             </div>
-        </header>
-        <!-- dont touch this Dad i will fix it later -->
+        </div>
+    </header>
+    <!-- dont touch this Dad i will fix it later -->
 
 
     <!-- bottom buttons start -->
@@ -33,4 +35,14 @@
     </div>
     <!-- bottom button Ends -->
 
-    {% endblock content %}
+
+    {% include '../law/footer.html' %}
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+</body>
+
+</html>

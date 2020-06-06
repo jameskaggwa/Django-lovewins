@@ -1,6 +1,10 @@
-{% extends "law/base.html" %}
 {% load static %}
-{% block content %}
+{% include "../law/header.html" %}
+
+<body>
+
+{% include '../law/menu.html' %}
+
     <header class="gallery-header">
       <h1>My Gallery</h1>
     </header>
@@ -44,4 +48,14 @@
         <!---Gallery Row 3 End -->
 
     </div>
-{% endblock content %}
+
+    {% include '../law/footer.html' %}
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+
+    </body>
+
+    </html>

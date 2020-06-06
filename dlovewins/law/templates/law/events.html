@@ -1,7 +1,11 @@
 
-{% extends "law/base.html" %}
-{% load static %}
-{% block content %}
+    {% load static %}
+    {% include "../law/header.html" %}
+
+    <body>
+
+    {% include '../law/menu.html' %}
+
     <header class="masthead" style="background-image:url({% static 'law/assets/img/events.jpg' %});">
         <div class="overlay"></div>
         <div class="container">
@@ -13,4 +17,14 @@
             </div>
         </div>
     </header>
-    {% endblock content %}
+
+        {% include '../law/footer.html' %}
+
+        <!-- js links -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.min.js"></script>
+
+    </body>
+
+    </html>
