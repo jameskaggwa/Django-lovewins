@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="{% static 'law/assets/fonts/font-awesome.min.css' %}">
+    <!-- testing links -->
+
     <!-- link to the main css -->
     <link rel="stylesheet" href="{% static 'law/assets/css/custom/style_main.css' %}">
     <!-- gallery links -->
@@ -21,10 +23,14 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="{% static 'law/assets/css/lightbox.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
     {% endif %}
     <!-- community links -->
     {% if title == "Community" %}
     <link rel="stylesheet" href="{% static 'law/assets/css/custom/community.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'law/assets/css/shards.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
     {% endif %}
     <!-- login links -->
     {% if title == "Login" %}
@@ -33,6 +39,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     {% endif %}
     <!-- links end here -->
+    
     {% if title %}
         <title>LoveAlwaysWins - {{ title }}</title>
     {% else %}
