@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+=======
+/*
+ *
+ * login-register modal
+ * Autor: Creative Tim
+ * Web-autor: creative.tim
+ * Web script: http://creative-tim.com
+ * 
+ */
+ 
+/*  Shake animation  */
+>>>>>>> 895c493d6104154858774cfd851c66f98ae9f669
 
 @charset "UTF-8";
 
@@ -218,4 +231,8 @@
 .big-register:hover{
     border-color: #00A4E4;
     color:  #00A4E4;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 895c493d6104154858774cfd851c66f98ae9f669
