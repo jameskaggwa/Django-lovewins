@@ -149,3 +149,7 @@ a{
 .btn-signup{
 	list-style: none;
 }
+
+.btn-signup a{
+	text-decoration: none;
+}
