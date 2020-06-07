@@ -1,31 +1,18 @@
+/* *{
+  padding: 0;
+  margin: 20px;
+} */
+
 /* css for cards */
-.card{
-  margin: 5% 0%;
-}
+/* .row-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+} */
 
-.card-body{
-  margin: 0% 0% 0% 3%;
-  padding: 6% 0%;
-}
-
-/* css for comment section */
-.comment-wrapper .panel-body {
-    max-height:650px;
-    overflow:auto;
-}
-
-.comment-wrapper .media-list .media img {
-    width:64px;
-    height:64px;
-    border:2px solid #e5e7e8;
-}
-
-.comment-wrapper .media-list .media {
-    border-bottom:1px dashed #efefef;
-    margin-bottom:25px;
-}
 /* smooth scroling */
-ul{
+/* .ul-elem{
   position: fixed;
   top: 50%;
   left: 0;
@@ -34,20 +21,20 @@ ul{
   padding: 0;
   z-index: 1;
 }
-ul li{
+.ul-elem .list-elem{
   list-style: none;
 }
-#container{
+#container-side-scroll{
   width: 100%;
   height: 100vh;
 }
-#container div{
+#container-side-scroll div{
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-#container div h1{
+#container-side-scroll div h1{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -59,7 +46,7 @@ ul li{
   font-size: 8rem;
   color: #fff;
 }
-ul li a{
+.ul-elem .list-elem a{
   display: block;
   text-decoration: none;
   height: 30px;
@@ -74,29 +61,29 @@ ul li a{
   border-bottom-right-radius: 15px;
   line-height:30px;
 }
-ul li a:hover{
+.ul-elem .list-elem a:hover{
   background: #333;
   text-decoration: none;
   color: #fff;
 }
-#container{
+#container-side-scroll{
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
   overflow-Y: scroll;
 }
-#container div#web{
+#container-side-scroll div#web{
   background-color: #00ced1;
 }
-#container div#dev{
+#container-side-scroll div#dev{
   background-color: #f05855;
 }
-#container div#trick{
+#container-side-scroll div#trick{
   background-color: #2bb673;
 }
-#container div#dot{
+#container-side-scroll div#dot{
   background-color: #2bb673;
 }
-#container div#com{
+#container-side-scroll div#com{
   background-color: #c72339;
-}
+} */
