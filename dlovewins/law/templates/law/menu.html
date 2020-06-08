@@ -28,16 +28,19 @@
         <a class="nav-link" href="{% url 'law-projects' %}">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'law-login' %}">Chat</a>
+        <a class="nav-link" href="{% url 'law-chat' %}">Chat</a>
       </li>
-<!-- sign up button -->
+  <!-- sign up button -->
 
       <ul>
         <li class="btn-signup">
-        <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="{% url 'law-login' %}">Sign Up</a></button>
+        <form class="inline my-2 my-lg-0">
+        <a href="{% url 'law-login' %}"><button class="btn btn-outline-success my-2 my-sm-0 btn-signup-in" type="button"><div class="btn-signup-in">Sign Up</div></button></a>
         </form>
-      </li></ul>
+      </li>
+    </ul>
+
+    <!-- sign up button -->
 
       </ul>
 

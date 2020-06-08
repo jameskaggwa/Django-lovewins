@@ -13,7 +13,6 @@
 
 }
 
-
 /* style for logo for blending */
 .logo{
 }
@@ -152,4 +151,8 @@ a{
 
 .btn-signup a{
 	text-decoration: none;
+}
+
+.btn-signup-in{
+	color: pink;
 }
