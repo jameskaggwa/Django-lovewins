@@ -1,89 +1,37 @@
-/* *{
-  padding: 0;
-  margin: 20px;
-} */
-
-/* css for cards */
-/* .row-card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-} */
-
-/* smooth scroling */
-/* .ul-elem{
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(50%);
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-.ul-elem .list-elem{
-  list-style: none;
-}
-#container-side-scroll{
-  width: 100%;
-  height: 100vh;
-}
-#container-side-scroll div{
-  position: relative;
-  width: 100%;
-  height: 100%;
+body {
+  padding-top: 200px;
 }
 
-#container-side-scroll div h1{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  font-size: 8rem;
-  color: #fff;
+.card-deck {
+  margin: 0 -15px;
+  justify-content: space-between;
 }
-.ul-elem .list-elem a{
-  display: block;
-  text-decoration: none;
-  height: 30px;
-  font-size: 24px;
-  background: #fff;
-  width: 140px;
-  color: #262626;
-  margin: 4px 0;
-  padding-left: 15px;
-  text-transform: uppercase;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  line-height:30px;
+
+.card-deck .card {
+  margin: 0 0 1rem;
 }
-.ul-elem .list-elem a:hover{
-  background: #333;
-  text-decoration: none;
-  color: #fff;
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
 }
-#container-side-scroll{
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
-  overflow-Y: scroll;
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
 }
-#container-side-scroll div#web{
-  background-color: #00ced1;
+
+@media (min-width: 992px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
 }
-#container-side-scroll div#dev{
-  background-color: #f05855;
-}
-#container-side-scroll div#trick{
-  background-color: #2bb673;
-}
-#container-side-scroll div#dot{
-  background-color: #2bb673;
-}
-#container-side-scroll div#com{
-  background-color: #c72339;
-} */
+
+
+/* card two css */

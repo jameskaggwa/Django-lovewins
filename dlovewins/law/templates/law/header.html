@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" href="{% static 'law/assets/fonts/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
     <!-- testing links -->
 
@@ -32,7 +31,11 @@
     <!-- community links -->
     {% if title == "Community" %}
     <link rel="stylesheet" href="{% static 'law/assets/css/custom/community.css' %}" />
-
+    <link rel="stylesheet" href="{% static 'law/assets/css/shards.min.css' %}">
+    <script src="{% static 'law/assets/js-engine-slider/jquery.js"' %}></script>
+    <script src="{% static 'law/assets/js-engine-slider/amazingslider.js"' %}></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'law/assets/js-engine-slider/amazingslider-1.css"' %}>
+    <script src="{% static 'law/assets/js-engine-slider/initslider-1.js"' %}></script>
     {% endif %}
     <!-- login links -->
     {% if title == "Login" %}

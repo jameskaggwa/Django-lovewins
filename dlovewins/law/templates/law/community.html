@@ -1,70 +1,73 @@
 {% load static %}
 {% include "../law/header.html" %}
 
-<body class="community_body">
-
-{% include '../law/menu.html' %}
+<body>
     <!-- header -->
-    <header class="masthead" style="background-image:url({% static 'law/assets/img/community/community.png' %});">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading">
-                        <h1>Community Views</h1><span class="subheading">We Love, No Hate!</span></div>
-                </div>
-            </div>
-        </div>
-    </header>
   <!-- header -->
-
+{% include '../law/menu.html' %}
   <!-- cards -->
-  <div class="row row-cols-1 row-cols-md-2 center">
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div class="container-fluid">
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1050" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Love Wins</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nesciunt. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1041" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Love Wins</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, minima.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1039" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Love Wins</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
       </div>
     </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-4">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
 </div>
   <!-- smooth scrolling -->
+  <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 56px;">
+          <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+              <ul class="amazingslider-slides" style="display:none;">
+                  <li><img src="{% static 'law/assets/img/community/community.png' %}" alt="c1"  title="c1" />
+                  </li>
+                  <li><img src="{% static 'law/assets/img/images/c2.jpeg' %}" alt="c2"  title="c2" />
+                  </li>
+                  <li><img src="{% static 'law/assets/img/images/c3.jpeg' %}" alt="c3"  title="c3" />
+                  </li>
+                  <li><img src="{% static 'law/assets/img/images/c4.jpeg' %}" alt="c4"  title="c4" />
+                  </li>
+                  <li><img src="{% static 'law/assets/img/images/c5.jpeg' %}" alt="c5"  title="c5" />
+                  </li>
+                  <li><img src="{% static 'law/assets/img/images/community.png' %}" alt="community"  title="community" />
+                  </li>
+              </ul>
+              <ul class="amazingslider-thumbnails" style="display:none;">
+                  <li><img src="{% static 'law/assets/img/images/c1-tn.jpeg' %}" alt="c1" title="c1" /></li>
+                  <li><img src="{% static 'law/assets/img/images/c2-tn.jpeg' %}" alt="c2" title="c2" /></li>
+                  <li><img src="{% static 'law/assets/img/images/c3-tn.jpeg' %}" alt="c3" title="c3" /></li>
+                  <li><img src="{% static 'law/assets/img/images/c4-tn.jpeg' %}" alt="c4" title="c4" /></li>
+                  <li><img src="{% static 'law/assets/img/images/c5-tn.jpeg' %}" alt="c5" title="c5" /></li>
+                  <li><img src="{% static 'law/assets/img/images/community-tn.png' %}" alt="community" title="community" /></li>
+              </ul>
+          </div>
+      </div>
 
 </body>
 </html>
 
-
-
-{% include '../law/footer.html' %}
 {% include '../law/js.html' %}
    </body>
 
